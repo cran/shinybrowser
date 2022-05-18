@@ -1,0 +1,138 @@
+html, body {
+  font-size: 16px;
+}
+body {
+  padding: 0 20px;
+  background-color: #e5fff5;
+  background-image: url('maze-white.png');
+  color: #333;
+  text-align: center;
+}
+
+#header {
+  text-align: center;
+  color: #fdfdfd;
+  padding: 70px 5px 90px;
+  border-bottom: 1px solid #ddd;
+  margin: 0 -35px 30px;
+  background: #29a991;
+  clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 3vw));
+}
+
+#pagetitle {
+  font-size: 5em;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+
+#subtitle {
+  font-size: 2em;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+#subsubtitle {
+  font-size: 1.3em;
+}
+
+#subsubtitle a {
+  color: #fdfdfd;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 979px) {
+  #header {
+    padding: 15px 5px 35px;
+  }
+  #pagetitle {
+    font-size: 3em;
+  }
+  #subtitle {
+    font-size: 1.7em;
+  }
+  #subsubtitle {
+    font-size: 1.2em;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #pagetitle {
+    font-size: 3em;
+  }
+  #subtitle {
+    font-size: 1.5em;
+  }
+  #subsubtitle {
+    font-size: 1.1em;
+  }
+}
+
+#sections {
+  text-align: left;
+  margin: 0 auto;
+  background: white;
+  padding: 20px 20px 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15);
+  border-radius: 3px;
+  width: 550px;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section .section_title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.section .section_param {
+  margin-bottom: 10px;
+}
+
+.section .section_value {
+  display: inline-block;
+  font-weight: bold;
+}
+
+.section .shiny-text-output {
+  font-weight: normal;
+}
+
+code {
+  background: #fcfffc;
+  color: #457357;
+}
+
+.section code {
+  background-color: transparent;
+  float: right;
+  padding: 0;
+  font-size: 0.9em;
+}
+
+@media only screen and (max-width: 767px) {
+  #sections {
+    width: 100%;
+    padding: 10px 10px 0;
+  }
+  .section .section_value {
+    display: block;
+  }
+  .section code {
+    float: none;
+    font-size: 0.8em;
+  }
+}
+
+#help {
+  margin: 20px 0 30px;
+  display: inline-block;
+  color: #457357;
+  padding: 10px;
+  font-size: 0.9em;
+  background: #ffffff80;
+}
